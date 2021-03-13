@@ -1,9 +1,11 @@
 import './App.css';
+//Components
+import MyNavbar from "./components/my-navbar/mynavbar.component"
 
 const  App = () => {
   return (
-    <div className="App">
-      My Portfolio
+    <div>
+      <MyNavbar/>
     </div>
   );
 }
