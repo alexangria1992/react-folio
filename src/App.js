@@ -8,6 +8,7 @@ import MyNavbar from "./components/my-navbar/mynavbar.component"
 import MyCarousel from "./components/my-carousel/my-carousel.component"
 import TitleMessage from "./components/title-message/title-message.component"
 import About from './pages/about/about.component';
+import Skills from './pages/skills/skills.component';
 
 const  App = () => {
   return (
@@ -18,7 +19,7 @@ const  App = () => {
       {/* ABOUT ME SECTION */}
       <div>
       <Parallax
-          blur={{ min: -30, max: 30 }}
+          blur={{ min: -1000, max: 1000 }}
           bgImage={image}
           bgImageAlt=""
           strength={-200}
@@ -31,7 +32,18 @@ const  App = () => {
         </Parallax>
    
       </div>
+
+
+      <div>
+     
+          <Container className="container-box rounded">
+            <Fade duration={500}>
+            <Skills/>
+            </Fade>
+          </Container>
+    
    
+      </div>
     </div>
   );
 }

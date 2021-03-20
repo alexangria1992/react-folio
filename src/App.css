@@ -23,3 +23,12 @@ hr
     height: 100%;
     z-index: 1;
 }
+
+body
+
+{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
