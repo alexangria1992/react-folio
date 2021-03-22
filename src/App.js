@@ -10,6 +10,11 @@ import TitleMessage from "./components/title-message/title-message.component"
 import About from './pages/about/about.component';
 import Skills from './pages/skills/skills.component';
 import ProjectTimeline from './components/projects-timeline/project-timeline.component';
+import Slide from "react-reveal/Slide";
+import Contact from './pages/contact-form/contact-form.component';
+import Footer from './pages/footer/footer.component';
+import Particles from "react-particles-js"
+import {particlesOptions} from "./particlesOption"
 
 const  App = () => {
   return (
@@ -17,6 +22,7 @@ const  App = () => {
       <MyNavbar/>
       <MyCarousel/>
       <TitleMessage/>
+      <Particles className="particles particles-box" params={particlesOptions}/>
       {/* ABOUT ME SECTION */}
       <div>
       <Parallax
@@ -36,21 +42,30 @@ const  App = () => {
 
 
       <div>
-     
           <Container className="container-box rounded">
-            <Fade duration={500}>
-            <Skills/>
-            </Fade>
+          <Slide bottom duration={500}>
+              <hr />
+              <Skills />
+            </Slide>
           </Container>
-    
-   
       </div>
+
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <ProjectTimeline />
+        </Slide>
+      </Container>
+
       <Container className="container-box rounded">
         <Fade duration={500}>
           <hr />
-          <ProjectTimeline />
+          <Contact />
         </Fade>
       </Container>
+
+      <hr />
+      <Footer/>
     </div>
   );
 }
