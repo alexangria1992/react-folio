@@ -6,8 +6,9 @@
 
 .profile 
 {
-    max-width: 18em;
-    height: 15em;
+    max-width: 20em;
+    height: 20em;
+    border-radius: 50%;
 }
 
 .my-details 
